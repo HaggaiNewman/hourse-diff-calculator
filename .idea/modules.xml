@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/WorkHoursBalanceProject.iml" filepath="$PROJECT_DIR$/.idea/WorkHoursBalanceProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hourse-diff-calculator.iml" filepath="$PROJECT_DIR$/.idea/hourse-diff-calculator.iml" />
     </modules>
   </component>
 </project>
