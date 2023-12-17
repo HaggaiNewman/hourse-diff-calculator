@@ -4,7 +4,7 @@ from datetime import datetime
 import pandas as pd
 
 
-def calculate_time_difference(file_path):
+def calculate_time_balance(file_path):
     df = pd.read_excel(file_path, header=None)
 
     time_column = df.iloc[:, df.columns.get_loc(35)]
@@ -17,7 +17,8 @@ def calculate_time_difference(file_path):
             .total_seconds() / 60 for t in time_values
         ]
     total_time_in_minutes = sum(time_diff_array_in_minutes)
-    return total_time_in_minutes / 60
+
+    return total_time_in_minutes
 
 
 if __name__ == "__main__":
@@ -27,5 +28,6 @@ if __name__ == "__main__":
         sys.exit(1)
 
     excel_file_path = sys.argv[1]
-    result = calculate_time_difference(excel_file_path)
-    print(f'\nTotal time difference in hours: {result}')
+    result = calculate_time_balance(excel_file_path)
+    print(f'\nTotal time balance in MINUTES: {result}')
+    print(f'\nTotal time balance in HOURS: {result / 60}')
