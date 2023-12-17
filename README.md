@@ -1,7 +1,7 @@
 Make your own virtual environment:
 python -m venv venv
 
-Acticate your venv:
+Activate your venv:
 Windows: venv\Scripts\activate.bat
 Linux/MacOS: Find it yourself big boys
 
